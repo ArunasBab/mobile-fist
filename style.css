@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+body {
+  padding: 0 1rem;
+  background-color: #fafafa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+header img {
+  height: 30px;
+}
+
+#burger {
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 1px solid rgba(202, 202, 202, 0.459);
+  background-color: #fafafa;
+  /* padding: 0.5rem; */
+  border-radius: 50%;
+}
+
+#burger:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+#nav,
+#log-in,
+#contact {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  /* padding: 1rem; */
+}
+
+table td {
+  width: 12vw;
+  height: 12vw;
+  border: 1px solid rgba(202, 202, 202, 0.459);
+}
+
+.inside {
+  padding: 1rem;
+  text-align: center;
+}
+
+.inside h1 {
+  font-size: 1.5rem;
+}
+
+.inside button {
+  padding: 0.6rem;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.inside button:hover {
+  background-color: #fafafa;
+  color: black;
+}
+
+.box {
+  width: 100%;
+  height: 250px;
+  border: 1px solid rgba(202, 202, 202, 0.459);
+  padding: 1rem;
+}
+
+.box:hover,
+.enter button:hover {
+  background-color: white;
+}
+
+.box img {
+  width: 4rem;
+}
+
+.enter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enter button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgba(202, 202, 202, 0.459);
+  border-radius: 100%;
+  background-color: #fafafa;
+}
+
+@media screen and (min-width: 600px) {
+  .inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .inside button {
+    height: 2.5rem;
+  }
+
+  .box-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  table td {
+    height: 7vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .box-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  table td {
+    height: 4vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #burger {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav,
+  #log-in,
+  #contact {
+    display: block;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: gray;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  nav a:hover {
+    background-color: rgb(228, 228, 228);
+    color: black;
+    border-radius: 30px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .start {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .start button {
+    background-color: white;
+    border: 1px solid rgba(202, 202, 202, 0.459);
+    padding: 0.4rem;
+  }
+
+  .start button:hover {
+    background-color: rgb(228, 228, 228);
+  }
+}
